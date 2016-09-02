@@ -4,7 +4,12 @@
 	</head>
 	<body ng-controller="arrayController">
 	
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+{{test}}
+<div ng-repeat="person in people">
+	{{person.name}}
+</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
