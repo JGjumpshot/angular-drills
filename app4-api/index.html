@@ -1,9 +1,9 @@
 <html ng-app="apiApp">
 	<body ng-controller="controller">
 		
-<!--{{test}}-->
-<div ng-repeat="starship in starships" ng-model="filterShips">
-	{{starships.data.results.name}}
+{{test}}
+<div ng-repeat="starship in starships.data.results" ng-model="filterShips">
+	{{starship.name}}
 </div>
 
 
