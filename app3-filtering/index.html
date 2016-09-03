@@ -1,7 +1,8 @@
 <html ng-app="app3">
 	<body ng-controller="controller">
-		<div ng-repeat="person in people">
-			{{person.name}}
+		Filter:<input ng-model="filterAll"/>
+		<div ng-repeat="person in people | filter: filterAll">
+			{{person.name}} {{person.phone}}
 		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
