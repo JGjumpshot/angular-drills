@@ -102,7 +102,9 @@ var myData = [
 ];
 
 angular.module('arrayApp').service('service', function() {
-	
+	this.getData = function() {
+		return myData;
+	}
 })
 
 
