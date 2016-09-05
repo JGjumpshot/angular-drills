@@ -1,12 +1,14 @@
 <html ng-app="apiApp">
 	<body ng-controller="controller">
 		
-	<div ng-repeat="starship in starships.data.results.name" ng-model="filterShips">
-		{{starship.name}}
-	</div>
+{{test}}
+Filter:<input type="text" ng-model="filterShips">
+<div ng-repeat="starship in starships.data.results | filter: filterShips" >
+	{{starship.name}}
+</div>
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
