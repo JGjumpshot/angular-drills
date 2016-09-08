@@ -3,9 +3,9 @@
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="controller">
-		{{test}}
-	<div ng-repeat="person in people">
-		{{person.name}}
+		
+	<div ng-model="filterAll" ng-repeat="person in people | filter: filterAll">
+		{{people.name}}
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
