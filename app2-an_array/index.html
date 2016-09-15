@@ -4,8 +4,8 @@
 	</head>
 	<body ng-controller="controller">
 		
-	<div ng-model="filterAll" ng-repeat="person in people | filter: filterAll">
-		{{people.name}}
+	<div ng-repeat="person in people">
+		{{person.name}}
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
